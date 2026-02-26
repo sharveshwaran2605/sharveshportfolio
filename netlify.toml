@@ -1,0 +1,9 @@
+[build]
+  base    = "project"            # run commands from inside project/
+  command = "npm install && npm run build"
+  publish = "project/dist"       # Vite’s default output
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200
