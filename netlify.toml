@@ -1,7 +1,7 @@
 [build]
   base    = "project"            # run commands from inside project/
   command = "npm install && npm run build"
-  publish = "project/dist"       # Vite’s default output
+  publish = "dist"               # relative to the base directory
 
 [[redirects]]
   from = "/*"
